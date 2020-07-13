@@ -1,0 +1,172 @@
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+body { @media screen and (max-width: 650px) 
+  background-color: #CA67C4; 
+  background-image: linear-gradient(to right, #82CECA, #C473D2);
+  background-size:auto;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 10px;
+font-family: Lucida Bright; 
+}
+h1 {
+  color: rgba(64, 22, 64, 0.9); 
+  font-family: Sunflower;
+  text-align: center;
+}
+h3 {color: rgba(0, 65, 65, 0.9);
+  text-align: center;
+  /* makes h3 move within the div it's in. This is probably not the best way to achieve this, but it works as long as you're ok with all h3s on the page being sticky.*/
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 50px;
+  font-size: 20px;
+  margin:0;
+}
+.openingDiv {
+  text-align:center;
+  align-items: center;
+}
+.binge {
+  text-align:left;
+  border-top-style: ridge;
+  border-left-style: ridge;
+  border-bottom-style: ridge;
+  border-right-style: ridge;
+}
+#cartoon {
+  float: left;
+  margin-right: 200px; 
+  margin-left: 200px;
+  @media screen and (max-width: 650px) 
+}
+.thumbnail:hover /*makes the picture bigger when you hover the mouse over it*/{ 
+  position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+  @media screen and (max-width: 650px);
+}
+#tv{
+  color: rgba(0, 65, 65, 0.9);
+}
+.kids{
+  border-top-style: ridge;
+  border-left-style: ridge;
+  border-bottom-style: ridge;
+  border-right-style: ridge;
+}
+.dreamHome {
+  display: flex; 
+}
+#homeOffice {
+background:url("https://live.staticflickr.com/8528/8642767413_68a4de48c6.jpg") no-repeat;
+    width: 500px; 
+    height: 333px;
+}
+#pantry { background:url("https://live.staticflickr.com/3560/3368923855_dd150f8d8d.jpg") no-repeat;
+  width: 500px;
+  height: 334px;
+}
+#kitchen { background:url("https://live.staticflickr.com/8327/8076945060_23f27ea59a.jpg") no-repeat;
+  width: 500px;
+  height: 333px;
+} 
+#recRoom { background:url("https://live.staticflickr.com/1809/42938384622_b815d84191.jpg") no-repeat;
+  width:500px;
+  height: 333px;
+}
+#mudRoom { background:url("https://live.staticflickr.com/4211/35077189464_971b56dd1b.jpg") no-repeat;
+  width: 500px;
+  height: 333px;
+}
+h4 {
+  color: rgba(0, 65, 65, 0.9);
+  text-align: center;
+}
+/*the following 3 pieces enable the columns allowing the odin pictures to be displayed side by side*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/*makes the pictures in the .column class scalable*/ 
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+/* gives the polaroid effect*/
+.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.captions {
+  color: black;
+  text-align: center;
+}
+
+.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+@media screen and (max-width: 600px) {
+  div.home {
+    img-size: 100px;
+  }
+}
+.home
+ {
+  text-align: center;
+  border-color: #DAE4F0;
+  padding: 15px 10px;
+  border-bottom-style: ridge;
+  border-top-style: ridge;
+  border-left-style: ridge;
+  border-right-style: ridge;
+}
+
+table {
+  margin: auto;
+}
+
+.closing {
+  text-align: center;
+}
