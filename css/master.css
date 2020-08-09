@@ -36,12 +36,14 @@ h3 {color: rgba(0, 65, 65, 0.9);
   border-left-style: ridge;
   border-bottom-style: ridge;
   border-right-style: ridge;
+  padding-bottom: 15px;
 }
 #cartoon {
+  display: inline-block;
   float: left;
   margin-right: 200px; 
   margin-left: 200px;
-  @media screen and (max-width: 650px) 
+  @media screen and (max-width: 650px);
 }
 .thumbnail:hover /*makes the picture bigger when you hover the mouse over it*/{ 
   position:relative;
@@ -54,6 +56,7 @@ h3 {color: rgba(0, 65, 65, 0.9);
 }
 #tv{
   color: rgba(0, 65, 65, 0.9);
+  display: inline-block;
 }
 .kids{
   border-top-style: ridge;
